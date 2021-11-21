@@ -1,0 +1,25 @@
+{
+  "name": "gamenight",
+  "version": "1.0.0",
+  "description": "web de juegos de mesa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaPitaPaloro/JuegosDeMesa-Gonzalez-Martin.git"
+  },
+  "author": "Martin Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaPitaPaloro/JuegosDeMesa-Gonzalez-Martin/issues"
+  },
+  "homepage": "https://github.com/PaPitaPaloro/JuegosDeMesa-Gonzalez-Martin#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodeman": "^1.1.2"
+  }
+}

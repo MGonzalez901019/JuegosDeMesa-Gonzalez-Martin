@@ -1,234 +1,172 @@
-
+@charset "UTF-8";
 body {
-    font-family: 'Play', sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: rgb(80, 78, 108); 
-    /* background:
+  font-family: 'Play', sans-serif;
+  color: white;
+  background-color: #504e6c;
+  /* background:
   url(../public/images/backgdImage.jpeg),*/
-   /*  background-image: 
+  /*  background-image: 
     linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../public/images/backgdImage.jpeg);*/
+  /*background-size: cover;*/ }
 
-  /*background-size: cover;*/
-  }
-  
+/*===============================================================================================================INDEX=========================================================================================*/
+#titulo {
+  color: #4d808b; }
 
+.title {
+  color: #4d808b; }
 
-  /*===============================================================================================================INDEX=========================================================================================*/
-  #titulo
-  {
-    color:rgb(77, 128, 139);
-  }
+.resumen-juegos {
+  color: ivory;
+  display: inline; }
 
+.logo {
+  text-decoration: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px; }
 
+.dropdown {
+  float: left;
+  overflow: hidden; }
 
-  .title
-  {
-    color:rgb(77, 128, 139);
-  }
+h2 {
+  color: #4d808b; }
 
-  .resumen-juegos{
-    color:ivory;
-    display: inline;
-  }
+.mainWrapper {
+  display: grid;
+  position: relative;
+  grid-template-areas: 'header header header'
+ 'nav nav nav'
+ 'main main main'
+ 'main main main'
+ 'footer footer footer'; }
 
-  .logo
-  {
-    text-decoration: none;
-    width:80px;
-    height:80px; 
-    border-radius: 50px;
-  }
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
+header {
+  grid-area: header;
+  padding: 5px; }
 
+nav {
+  grid-area: nav;
+  grid-column-start: 3;
+  width: 500px;
+  overflow: hidden;
+  background-color: #2a283f;
+  border: solid 2px #2a283f;
+  top: 0px;
+  position: sticky;
+  z-index: 10;
+  transition: all 10s; }
 
-  h2
-  {
-    color:rgb(77, 128, 139);
-  }
+nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
 
-  .mainWrapper{
-    display: grid;
-    position: relative;
-    grid-template-areas: 
-    'header header header'
-    'nav nav nav'
-    'main main main'
-    'main main main'
-    'footer footer footer'
-    ;
-  
-  }
-  header{
-    grid-area: header;
-    padding: 5px;
-  }
+nav a:hover {
+  transform: scale(1.1);
+  background-color: grey; }
 
-  nav {
-    grid-area: nav;
-    grid-column-start: 3;
-    width: 500px;
-    overflow: hidden;
-    background-color: rgb(42, 40, 63);
-    border: solid  2px rgb(42, 40, 63);
-    top:0px;
-    position: sticky;
-    z-index: 10;
+main {
+  grid-area: main; }
 
-    transition: all 10s;
-  }
+footer {
+  grid-area: footer;
+  margin-top: 100px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2a283f;
+  color: white;
+  text-align: center; }
 
-  nav a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+/* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
+.indexGameContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 30px;
+  width: 600px; }
 
-  nav a:hover { 
-    transform: scale(1.1);
-    background-color: grey;
-  }
-  main{
-    grid-area: main;
-  }
-  footer {
-    grid-area: footer;
-    margin-top: 100px;
-    display: block;
-    height: 50px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:rgb(42, 40, 63);
-    color: white ;
-    text-align: center;
-  }
-
-
-  /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
-  .indexGameContainer
-  {
-    
-    display:flex;
-    position: relative;
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 30px;
-    width: 600px; 
-    
-  }
-  /* Imágenes del contenedor de los juegos en el index*/
-  .boardgameImage{
-    align-content:left;
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    border-radius: 10px;
-
+/* Imágenes del contenedor de los juegos en el index*/
+.boardgameImage {
+  align-content: left;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
   /*transiciones  */
-    transition: all 0.5s;
-  }
+  transition: all 0.5s; }
 
-  .boardgameImage:hover
-  {
-    transform: scale(1.1);
-    
-  }
+.boardgameImage:hover {
+  transform: scale(1.1); }
 
-  .boardGameDescription
-  {
-    padding: 20px;
-    border: 20px;
-    display: flex;
-    flex-direction: column;
+.boardGameDescription {
+  padding: 20px;
+  border: 20px;
+  display: flex;
+  flex-direction: column; }
 
-  }
-  .boardGameDescription h3
-  {
-    color: rgb(77, 128, 139);
-    /* margin: 20px; */
-    /* padding: 20 px; */
-    justify-content: right;
+.boardGameDescription h3 {
+  color: #4d808b;
+  /* margin: 20px; */
+  /* padding: 20 px; */
+  justify-content: right; }
 
-  }
+.boardGameDescription p {
+  /* padding: 20px; */
+  width: 800px;
+  margin: 0px;
+  justify-self: right; }
 
-  .boardGameDescription p
-  {
-    /* padding: 20px; */
-    width: 800px;
-    margin: 0px;
-  justify-self: right;
-  }
+.gameTitle {
+  font-weight: 700; }
 
+/*TODO: MEJORAR FOOTER*/
+.linkToIndex {
+  text-decoration: none;
+  color: white; }
 
-  .gameTitle
-  {
-    font-weight: 700;
-  }
-  
+/*==================================================================================================*INDICE*============================================================================================================================================================================*/
+.gameIndex {
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
 
-  /*TODO: MEJORAR FOOTER*/ 
-
-  
-  .linkToIndex
-  {
-    text-decoration: none;
-    color:rgb(255, 255, 255);
-  }
-
-  /*==================================================================================================*INDICE*============================================================================================================================================================================*/
-
-  .gameIndex{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-
-  /*TODO: Modificar atributos de la tabla*/
-
-  /* .gameIndex table{
+/*TODO: Modificar atributos de la tabla*/
+/* .gameIndex table{
 
   } */
-  .gameIndex th
-  {
-    margin: 20px;
-    background-color: rgb(42, 40, 63);
-     border-collapse: collapse;
-  }
+.gameIndex th {
+  margin: 20px;
+  background-color: #2a283f;
+  border-collapse: collapse; }
 
-  .gameIndex td
-  {
-    padding: 20px;
-    
-  }
+.gameIndex td {
+  padding: 20px; }
 
+/*===================================================================================================*TUTORIALES*======================================================================================================================================================================================================*/
+.tutorialContainer {
+  border-top: 20px;
+  margin-top: 2;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 400px 400px; }
 
-  /*===================================================================================================*TUTORIALES*======================================================================================================================================================================================================*/
+.tutorialVideo {
+  margin-top: 20px;
+  float: left;
+  width: 300px;
+  height: 200px; }
 
-  .tutorialContainer
-  {
-    border-top: 20px;
-    margin-top: 2;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 400px 400px;
-  }
-  .tutorialVideo
-  {
-    margin-top: 20px;
-    float: left;
-    width: 300px;
-    height: 200px;
-  }
-
-  /* .tutorialContainer h2
+/* .tutorialContainer h2
   {
     color: rgb(77, 128, 139);
     margin: 20px;
@@ -237,136 +175,93 @@ body {
     
     
   } */
-  
-  .tutorialContainer
-  {
+.tutorialContainer {
+  margin: 10px;
+  padding: 10px;
+  vertical-align: middle; }
 
-    margin: 10px;
-    padding: 10px;
-    vertical-align:middle;
-    
+.gameSummary {
+  grid-column-start: 2; }
 
-  }
-  .gameSummary
-  {
-    grid-column-start: 2;
-  }
+/*===================================================================================================*FAQ*======================================================================================================================================================================================================*/
+.faqContainer {
+  height: 500px; }
 
+.faqContainer ol {
+  list-style-type: none; }
 
-  /*===================================================================================================*FAQ*======================================================================================================================================================================================================*/
+.faqContainer div {
+  background-color: #2a283f;
+  width: 500px;
+  padding: 10px;
+  margin: 10px; }
 
-  .faqContainer
-  {
-    height: 500px;
+.faqForm {
+  background-color: #2a283f;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
-  }
-  .faqContainer ol{
-    list-style-type: none;
-  }
-  .faqContainer div {
-    background-color: rgb(42, 40, 63);
-    width: 500px;
-    padding: 10px;
-    margin: 10px;
-  }
-
-  .faqForm
-  {
-    background-color: rgb(42, 40, 63);
-    width: 600px;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    
-  }
-  #fmail
-  {
-    width: 500px;
-  }
-#fmailLabel
-{
-  padding-top: 1cm;
-}
-  #fname
-  {
-    width: 500px;
-    border:5px;
-  }
-
-  #frequest
-  {
-    width: 500px;
-  }
-  .faqForm div h3
-  {
-    display: block;
-    margin-bottom: 5px;
-    padding: 5px;
-  }
-  .faqForm form
-  {
-    align-self: left;
-    display: block;
-    padding: 5px;
-    border: 5px;
-    margin: 5px;
-    
-  }
-
-
-
-  /*===================================================================================================*NewReleases*======================================================================================================================================================================================================*/
-
-  .newReleasesContainer
-  {
-    display: flex;
+  .faq-container{
+    margin:100px;
     height: 500px;
   }
-
-  .newReleasesBoardGameDescription{
-    float: right;
-    padding: 20px;
+  .accordion-body p{
+    color:black;
   }
 
+#fmail {
+  width: 500px; }
 
+#fmailLabel {
+  padding-top: 1cm; }
 
+#fname {
+  width: 500px;
+  border: 5px; }
 
+#frequest {
+  width: 500px; }
 
+.faqForm div h3 {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px; }
 
+.faqForm form {
+  align-self: left;
+  display: block;
+  padding: 5px;
+  border: 5px;
+  margin: 5px; }
 
+/*===================================================================================================*NewReleases*======================================================================================================================================================================================================*/
+.newReleasesContainer {
+  display: flex;
+  height: 500px; }
 
+.newReleasesBoardGameDescription {
+  float: right;
+  padding: 20px; }
 
+/*===================================================================================================*Reviews*======================================================================================================================================================================================================*/
+#catan {
+  text-align: center;
+  color: grey;
+  color-interpolation-filters: linearRGB; }
 
+.center {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  padding: 10px; }
 
+.center ul li {
+  list-style-type: none; }
 
-
-  /*===================================================================================================*Reviews*======================================================================================================================================================================================================*/
-
-  #catan
-  {
-    text-align: center;
-    color: grey;
-    color-interpolation-filters: linearRGB;
-  }
-
-  .center {
-    margin: auto;
-    width: 60%;
-    text-align: center;
-    padding: 10px;
-    }
-
-  .center ul li{
-    list-style-type: none;
-  }
-
-  
-  .imageReveiewPage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
-  }
+.imageReveiewPage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
