@@ -1,48 +1,4 @@
 @charset "UTF-8";
-body {
-  font-family: 'Play', sans-serif;
-  color: white;
-  background-color: #504e6c;
-  /* background:
-  url(../public/images/backgdImage.jpeg),*/
-  /*  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../public/images/backgdImage.jpeg);*/
-  /*background-size: cover;*/ }
-
-/*===============================================================================================================INDEX=========================================================================================*/
-#titulo h1 {
-  color: #4d808b;
-  display: flex; }
-
-.title {
-  color: #4d808b; }
-
-.resumen-juegos {
-  color: ivory;
-  display: inline; }
-
-.logo {
-  text-decoration: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px; }
-
-.dropdown {
-  float: left;
-  overflow: hidden; }
-
-h2 {
-  color: #4d808b; }
-
-.mainWrapper {
-  display: grid;
-  position: relative;
-  grid-template-areas: 'header nav nav' 'main main main' 'main main main' 'footer footer footer'; }
-
-header {
-  grid-area: header;
-  padding: 5px; }
-
 nav {
   grid-area: nav;
   grid-column-start: 3;
@@ -67,9 +23,6 @@ nav a:hover {
   transform: scale(1.1);
   background-color: grey; }
 
-main {
-  grid-area: main; }
-
 footer {
   grid-area: footer;
   margin-top: 100px;
@@ -82,6 +35,44 @@ footer {
   background-color: #2a283f;
   color: white;
   text-align: center; }
+
+header {
+  grid-area: header;
+  padding: 5px; }
+
+main {
+  grid-area: main; }
+
+body {
+  font-family: 'Play', sans-serif;
+  color: white;
+  background-color: #504e6c; }
+
+/*===============================================================================================================INDEX=========================================================================================*/
+#titulo h1 {
+  color: #4d808b;
+  display: flex; }
+
+.title {
+  color: #4d808b; }
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  text-decoration: none; }
+
+.dropdown {
+  float: left;
+  overflow: hidden; }
+
+h2 {
+  color: #4d808b; }
+
+.mainWrapper {
+  display: grid;
+  position: relative;
+  grid-template-areas: 'header nav nav' 'main main main' 'main main main' 'footer footer footer'; }
 
 /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
 .indexGameContainer {
@@ -165,7 +156,7 @@ footer {
 
 /* .tutorialContainer h2
   {
-    color: rgb(77, 128, 139);
+    color: $color-main-text;
     margin: 20px;
     padding: 20 px;
     float: right;
