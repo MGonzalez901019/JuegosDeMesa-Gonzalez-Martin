@@ -18,52 +18,54 @@ body {
     font-family: 'Play', sans-serif;
     color: rgb(255, 255, 255);
     background-color: rgb(80, 78, 108); 
+    .mainWrapper{
+      display: grid;
+      position: relative;
+      grid-template-areas: 
+      'header nav nav'
+      'main main main'
+      'main main main'
+      'footer footer footer'
+      ;
+    
+    }
+    #titulo h1
+    {
+      color:$color-main-text;
+      display: flex;
+  
+    }
+  
+  
+  
+    .title
+    {
+      color:$color-main-text;
+    }
+  
+    .logo
+    {
+      @include size-logo(50px,50px,none,50px);
+    }
+  
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+  
+  
+    h2
+    {
+      color:$color-main-text;
+    }
+  
   }
   
 
 
   /*===============================================================================================================INDEX=========================================================================================*/
-  #titulo h1
-  {
-    color:$color-main-text;
-    display: flex;
-
-  }
 
 
-
-  .title
-  {
-    color:$color-main-text;
-  }
-
-  .logo
-  {
-    @include size-logo(50px,50px,none,50px);
-  }
-
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-
-  h2
-  {
-    color:$color-main-text;
-  }
-
-  .mainWrapper{
-    display: grid;
-    position: relative;
-    grid-template-areas: 
-    'header nav nav'
-    'main main main'
-    'main main main'
-    'footer footer footer'
-    ;
-  
-  }
 
 
   /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
@@ -76,19 +78,43 @@ body {
     padding: 5px;
     margin-bottom: 30px;
     width: 600px; 
-    
+    .boardgameImage{
+      align-content:left;
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+      border-radius: 10px;
+  
+    /*transiciones  */
+      transition: all 0.5s;
+    }
+    .boardGameDescription
+    {
+      padding: 20px;
+      border: 20px;
+      display: flex;
+      flex-direction: column;
+  
+    }
+    .boardGameDescription h3
+    {
+      color: $color-main-text;
+      /* margin: 20px; */
+      /* padding: 20 px; */
+      justify-content: right;
+  
+    }
+  
+    .boardGameDescription p
+    {
+      /* padding: 20px; */
+      width: 800px;
+      margin: 0px;
+    justify-self: right;
+    }
   }
   /* Imágenes del contenedor de los juegos en el index*/
-  .boardgameImage{
-    align-content:left;
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    border-radius: 10px;
 
-  /*transiciones  */
-    transition: all 0.5s;
-  }
 
   .boardgameImage:hover
   {
@@ -96,30 +122,7 @@ body {
     
   }
 
-  .boardGameDescription
-  {
-    padding: 20px;
-    border: 20px;
-    display: flex;
-    flex-direction: column;
 
-  }
-  .boardGameDescription h3
-  {
-    color: $color-main-text;
-    /* margin: 20px; */
-    /* padding: 20 px; */
-    justify-content: right;
-
-  }
-
-  .boardGameDescription p
-  {
-    /* padding: 20px; */
-    width: 800px;
-    margin: 0px;
-  justify-self: right;
-  }
 
 
   .gameTitle
@@ -148,9 +151,6 @@ body {
 
   /*TODO: Modificar atributos de la tabla*/
 
-  /* .gameIndex table{
-
-  } */
   .gameIndex th
   {
     margin: 20px;
@@ -183,16 +183,6 @@ body {
     height: 200px;
   }
 
-  /* .tutorialContainer h2
-  {
-    color: $color-main-text;
-    margin: 20px;
-    padding: 20 px;
-    float: right;
-    
-    
-  } */
-  
   .tutorialContainer
   {
 
