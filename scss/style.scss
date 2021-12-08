@@ -7,13 +7,13 @@
 
 
 @mixin size-logo($ancho, $alto,$decoracion,$radio) {
-  height: $alto;
-  width: $ancho;
+  height: $alto*2;
+  width: $ancho/2;
   border-radius: $radio;
   text-decoration: $decoracion;
 
 }
-
+$ancho : 100px;
 body {
     font-family: 'Play', sans-serif;
     color: rgb(255, 255, 255);
@@ -33,6 +33,12 @@ body {
     {
       color:$color-main-text;
       display: flex;
+      @if $ancho > 100px {
+        color : blue;
+      }
+      @else{
+        color: $color-main-text;
+      }
   
     }
   
@@ -45,7 +51,8 @@ body {
   
     .logo
     {
-      @include size-logo(50px,50px,none,50px);
+      @include size-logo(100px,25px,none,50px);
+
     }
   
     .dropdown {
@@ -99,28 +106,28 @@ body {
     .boardGameDescription h3
     {
       color: $color-main-text;
-      /* margin: 20px; */
-      /* padding: 20 px; */
       justify-content: right;
   
     }
   
     .boardGameDescription p
     {
-      /* padding: 20px; */
+
       width: 800px;
       margin: 0px;
     justify-self: right;
     }
-  }
   /* Imágenes del contenedor de los juegos en el index*/
-
-
+    
   .boardgameImage:hover
   {
     transform: scale(1.1);
     
   }
+  }
+
+
+
 
 
 
