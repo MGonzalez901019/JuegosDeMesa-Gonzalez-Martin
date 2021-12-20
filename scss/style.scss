@@ -22,7 +22,7 @@ body {
       display: grid;
       position: relative;
       grid-template-areas: 
-      'header nav nav'
+      'header header header'
       'main main main'
       'main main main'
       'footer footer footer'
@@ -274,13 +274,13 @@ body {
 
   /*===================================================================================================*NewReleases*======================================================================================================================================================================================================*/
 
-  .newReleasesContainer
+  .reviewsContainer
   {
     display: flex;
-    height: 500px;
+    height: 250px;
   }
 
-  .newReleasesBoardGameDescription{
+  .reviewsBoardGameDescription{
     float: right;
     padding: 20px;
   }
