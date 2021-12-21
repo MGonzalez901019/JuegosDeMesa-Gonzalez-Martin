@@ -51,11 +51,16 @@ body {
     position: relative;
     grid-template-areas: 'header header header' 'main main main' 'main main main' 'footer footer footer'; }
   body #titulo h1 {
-    color: #4d808b;
+    color: #65aebe;
     display: flex;
-    color: #4d808b; }
+    color: #65aebe; }
+  body .explanation {
+    background-color: #436168;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center; }
   body .title {
-    color: #4d808b; }
+    color: #65aebe; }
   body .logo {
     height: 50px;
     width: 50px;
@@ -65,7 +70,7 @@ body {
     float: left;
     overflow: hidden; }
   body h2 {
-    color: #4d808b; }
+    color: #65aebe; }
 
 /*===============================================================================================================INDEX=========================================================================================*/
 /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
@@ -91,7 +96,7 @@ body {
     display: flex;
     flex-direction: column; }
   .indexGameContainer .boardGameDescription h3 {
-    color: #4d808b;
+    color: #65aebe;
     justify-content: right; }
   .indexGameContainer .boardGameDescription p {
     width: 800px;

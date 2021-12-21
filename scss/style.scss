@@ -42,7 +42,13 @@ body {
   
     }
   
-  
+  .explanation
+  {
+    background-color: $exp-bckgd;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
   
     .title
     {
@@ -55,6 +61,7 @@ body {
 
     }
   
+
     .dropdown {
       float: left;
       overflow: hidden;
