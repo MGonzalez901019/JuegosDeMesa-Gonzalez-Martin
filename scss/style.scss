@@ -27,7 +27,13 @@ body {
       'main main main'
       'footer footer footer'
       ;
-    
+      .section-explanation
+  {
+    background-color: $exp-bckgd;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
     }
     #titulo h1
     {
@@ -42,13 +48,7 @@ body {
   
     }
   
-  .explanation
-  {
-    background-color: $exp-bckgd;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-  }
+
   
     .title
     {
@@ -83,6 +83,23 @@ body {
 
 
   /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
+
+  .most-wanted{
+    background-color: $gral-bckgd;
+    margin: $gral-mgn;
+    height: auto;
+    padding: $gral-card-padding;
+
+
+    .most-wanted-title h4{
+      padding: $gral-padding;
+      font-size: 30px;
+    }
+    .most-wanted-card-body{
+      display: flex;
+      flex-direction: row;
+    }
+  }
   .indexGameContainer
   {
     
@@ -132,12 +149,6 @@ body {
     
   }
   }
-
-
-
-
-
-
 
   .gameTitle
   {

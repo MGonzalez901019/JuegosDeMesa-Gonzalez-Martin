@@ -26,7 +26,7 @@ footer {
   grid-area: footer;
   margin-top: 100px;
   display: block;
-  height: 50px;
+  height: auto;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -34,6 +34,9 @@ footer {
   background-color: #2a283f;
   color: white;
   text-align: center; }
+
+.footer-text p {
+  height: auto; }
 
 header {
   grid-area: header;
@@ -50,15 +53,15 @@ body {
     display: grid;
     position: relative;
     grid-template-areas: 'header header header' 'main main main' 'main main main' 'footer footer footer'; }
+    body .mainWrapper .section-explanation {
+      background-color: #436168;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center; }
   body #titulo h1 {
     color: #65aebe;
     display: flex;
     color: #65aebe; }
-  body .explanation {
-    background-color: #436168;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center; }
   body .title {
     color: #65aebe; }
   body .logo {
@@ -74,6 +77,18 @@ body {
 
 /*===============================================================================================================INDEX=========================================================================================*/
 /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
+.most-wanted {
+  background-color: #2f7065;
+  margin: 20px;
+  height: auto;
+  padding: 10px; }
+  .most-wanted .most-wanted-title h4 {
+    padding: 20px;
+    font-size: 30px; }
+  .most-wanted .most-wanted-card-body {
+    display: flex;
+    flex-direction: row; }
+
 .indexGameContainer {
   display: flex;
   position: relative;
