@@ -3009,8 +3009,10 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #919db1;
   border-color: #0d6efd;
+  margin: 10px;
+ align-self: flex-end;
 }
 .btn-primary:hover {
   color: #fff;
@@ -4489,6 +4491,8 @@ textarea.form-control-lg {
 .card {
   position: relative;
   display: flex;
+  margin:5px;
+  margin-bottom:  20px;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -4523,10 +4527,13 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  color:black;
+  position: relative;
 }
 
 .card-title {
   margin-bottom: 0.5rem;
+  color: black;
 }
 
 .card-subtitle {
@@ -4586,13 +4593,17 @@ textarea.form-control-lg {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 100%;
+  width: max-content;
 }
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 2px);
+  border-top-right-radius: calc(0.25rem - 2px);
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  align-self: center;
 }
 
 .card-img,

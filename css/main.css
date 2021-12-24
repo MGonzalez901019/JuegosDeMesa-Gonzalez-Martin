@@ -2,7 +2,6 @@
 nav {
   grid-area: nav;
   grid-column-start: 3;
-  width: 410px;
   overflow: hidden;
   background-color: #2a283f;
   border: solid 2px #2a283f;
@@ -27,7 +26,7 @@ footer {
   grid-area: footer;
   margin-top: 100px;
   display: block;
-  height: 50px;
+  height: auto;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -35,6 +34,9 @@ footer {
   background-color: #2a283f;
   color: white;
   text-align: center; }
+
+.footer-text p {
+  height: auto; }
 
 header {
   grid-area: header;
@@ -50,12 +52,18 @@ body {
   body .mainWrapper {
     display: grid;
     position: relative;
-    grid-template-areas: 'header nav nav' 'main main main' 'main main main' 'footer footer footer'; }
+    grid-template-areas: 'header header header' 'main main main' 'main main main' 'footer footer footer'; }
+    body .mainWrapper .section-explanation {
+      background-color: #436168;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center; }
   body #titulo h1 {
-    color: #4d808b;
-    display: flex; }
+    color: #65aebe;
+    display: flex;
+    color: #65aebe; }
   body .title {
-    color: #4d808b; }
+    color: #65aebe; }
   body .logo {
     height: 50px;
     width: 50px;
@@ -65,17 +73,30 @@ body {
     float: left;
     overflow: hidden; }
   body h2 {
-    color: #4d808b; }
+    color: #65aebe; }
 
 /*===============================================================================================================INDEX=========================================================================================*/
 /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
+.most-wanted {
+  background-color: #2f7065;
+  margin: 20px;
+  height: auto;
+  padding: 10px; }
+  .most-wanted .most-wanted-title h4 {
+    padding: 20px;
+    font-size: 30px; }
+  .most-wanted .most-wanted-card-body {
+    display: flex;
+    flex-direction: row; }
+
 .indexGameContainer {
   display: flex;
   position: relative;
   width: 100%;
   padding: 5px;
   margin-bottom: 30px;
-  width: 600px; }
+  width: 600px;
+  /* Imágenes del contenedor de los juegos en el index*/ }
   .indexGameContainer .boardgameImage {
     align-content: left;
     width: 200px;
@@ -90,19 +111,14 @@ body {
     display: flex;
     flex-direction: column; }
   .indexGameContainer .boardGameDescription h3 {
-    color: #4d808b;
-    /* margin: 20px; */
-    /* padding: 20 px; */
+    color: #65aebe;
     justify-content: right; }
   .indexGameContainer .boardGameDescription p {
-    /* padding: 20px; */
     width: 800px;
     margin: 0px;
     justify-self: right; }
-
-/* Imágenes del contenedor de los juegos en el index*/
-.boardgameImage:hover {
-  transform: scale(1.1); }
+  .indexGameContainer .boardgameImage:hover {
+    transform: scale(1.1); }
 
 .gameTitle {
   font-weight: 700; }
@@ -151,7 +167,7 @@ body {
 
 /*===================================================================================================*FAQ*======================================================================================================================================================================================================*/
 .faq-container {
-  height: 500px;
+  height: auto;
   margin: 50px; }
 
 .faqContainer ol {
@@ -199,10 +215,10 @@ body {
   margin: 5px; }
 
 /*===================================================================================================*NewReleases*======================================================================================================================================================================================================*/
-.newReleasesContainer {
+.reviewsContainer {
   display: flex;
-  height: 500px; }
+  height: 250px; }
 
-.newReleasesBoardGameDescription {
+.reviewsBoardGameDescription {
   float: right;
   padding: 20px; }

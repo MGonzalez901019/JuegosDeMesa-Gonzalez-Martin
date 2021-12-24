@@ -2,7 +2,7 @@ footer {
     grid-area: footer;
     margin-top: 100px;
     display: block;
-    height: 50px;
+    height: auto;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -10,4 +10,8 @@ footer {
     background-color:rgb(42, 40, 63);
     color: white ;
     text-align: center;
+  }
+
+  .footer-text p{
+    height: auto;
   }

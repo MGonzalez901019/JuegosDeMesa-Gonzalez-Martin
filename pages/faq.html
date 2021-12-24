@@ -21,65 +21,79 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <title>FAQ | GameNight </title>
+
+    <!-- Font-Awesome  -->
+
+    <script src="https://kit.fontawesome.com/f974b9ddcb.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="mainWrapper">
+<body class="container-fluid">
+    <div class="mainWrapper container-fluid">
     
 
     <!-- HEADER -->
     <header>
       <div id="titulo"><h1><a  class="linkToIndex" href="../index.html"><img class="logo" src="../public/images/logo2.png" alt="logo" /></a>  GN</h1></div>             
 
+          <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="indice.html">Indice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutoriales.html">Tutoriales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newReleases.html">Reseñas de Juegos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     </header>
     
-    <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="indice.html">Indice</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tutoriales.html">Tutoriales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="newReleases.html">Novedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+
 
     <!-- MAIN -->
     <main>
+
+     <section>
+       <div class="section-explanation">
+            <h4>En esta sección contestamos todas las preguntas frecuentes de la comunidad <br>
+              ¿Tanta información te marea? ¡No te desesperes! Con nuestra ayuda vas a poder entender el mundo del BoardGame
+             </h4>
+       </div>
+     </section> 
     <div class="faq-container">
-    <div class="accordion" id="accordionExample">
+      <div class="accordion" id="accordionExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
+          <h3 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 ¿Qué juego recomiendan para empezar?
             </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p><strong>Un juego simple y divertido para empezar a jugar y a adentrarse en este mundo de los juegos de mesa es el Ticket to Ride.</strong></p>
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
+          <h3 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 ¿Qué juego recomiendan para jugar en familia?
             </button>
-          </h2>
+          </h3>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p><strong>Century es un muy buen juego para jugar en familia, se caracteriza por ser simple y además no tiene mucho tiempo de demora, un juego clasico de Century suele demorar 30 minutos.</strong> </p>
@@ -87,23 +101,104 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
+          <h3 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 ¿Qué juegos de cartas entretenidos hay?
             </button>
-          </h2>
+          </h3>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
              <p> <strong>Un juego simple y muy divertido es el Bohnanza, donde cada jugador cultiva habichuelas y las vende a cambio de dinero y quien más dinero tiene es el ganador.</strong></p>
             </div>
           </div>
         </div>
-      </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                ¿Cómo se cataloga la dificultad de los juegos de mesa?
+            </button>
+          </h3>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p> <strong>La dificultad de los juegos de mesa va desde 1 a 5, 1 siendo lo más fácil y 5 siendo lo más dificil.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                ¿Qué es una Ludoteca?
+            </button>
+          </h3>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p> <strong>Una ludoteca es una biblioteca de juegos de mesa, cada persona va juntando los juegos a lo largo de su vida y armándola.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                ¿La gente se junta a jugar?
+            </button>
+          </h3>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p> <strong>Con el uso de las redes sociales juntarse entre desconocidos de la comunidad boardgamera cada dia es más facil, el 11 de Noviembre se juntan todos en un salón a jugar.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                ¿Qué es un juego Gateway?
+            </button>
+          </h3>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p> <strong>Un juego Gateway es un juego que facilite la entrada de las personas al mundo boardgamero, un juego que es divertido como que para que cualquier persona se interese ne los juegos de mesa.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                ¿En qué rangos de precio se manejan los juegos de mesa?
+            </button>
+          </h3>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p> <strong>Los precios de los juegos de mesa pueden variar desde los 2000$ a más de 30000$.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                ¿Cuál es un juego de mesa conocido?
+            </button>
+          </h3>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p> <strong>Un juego de mesa muy conocido además del Monopoly o TEG es el Catan, el cual empezó a tener mucha fama en todos los países.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                ¿Hay grupos que jueguen Boardgames?
+            </button>
+          </h3>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p> <strong>Sí, hay grupos en Facebook y Telegram.</strong></p>
+            </div>
+          </div>
+        </div>
+
     </div>
-
-      <div>
-
-      </div>
+    </div>
     <div class="faqForm">
         <div>
             
@@ -116,15 +211,26 @@
             <input type="text" name="fmail" id="fmail"><br>
             <label id="frequestLabel" for="frequest">Consulta</label><br>
             <input type="text" name="frequest" id="frequest"><br>
+
+            <button type="button" class="btn btn-primary">Enviar Consulta</button>
         </form>
     </div>
 
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>All rights Reserved</p>
-    </footer>
+            <!-- FOOTER -->
+            <footer>
+              <div class="footer-text">
+                <p>Seguinos en  </p>
+              </div>
+
+                <div class="footer-icons">
+                  <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i>
+                </div>
+                
+              
+
+            </footer>
 
 </div>
 <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script> 

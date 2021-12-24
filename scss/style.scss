@@ -7,13 +7,13 @@
 
 
 @mixin size-logo($ancho, $alto,$decoracion,$radio) {
-  height: $alto;
-  width: $ancho;
+  height: $alto*2;
+  width: $ancho/2;
   border-radius: $radio;
   text-decoration: $decoracion;
 
 }
-
+$ancho : 100px;
 body {
     font-family: 'Play', sans-serif;
     color: rgb(255, 255, 255);
@@ -22,21 +22,33 @@ body {
       display: grid;
       position: relative;
       grid-template-areas: 
-      'header nav nav'
+      'header header header'
       'main main main'
       'main main main'
       'footer footer footer'
       ;
-    
+      .section-explanation
+  {
+    background-color: $exp-bckgd;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
     }
     #titulo h1
     {
       color:$color-main-text;
       display: flex;
+      @if $ancho > 100px {
+        color : blue;
+      }
+      @else{
+        color: $color-main-text;
+      }
   
     }
   
-  
+
   
     .title
     {
@@ -45,9 +57,11 @@ body {
   
     .logo
     {
-      @include size-logo(50px,50px,none,50px);
+      @include size-logo(100px,25px,none,50px);
+
     }
   
+
     .dropdown {
       float: left;
       overflow: hidden;
@@ -69,6 +83,23 @@ body {
 
 
   /* Contenedor que trae la imagen, el título y las descripciones de los juegos*/
+
+  .most-wanted{
+    background-color: $gral-bckgd;
+    margin: $gral-mgn;
+    height: auto;
+    padding: $gral-card-padding;
+
+
+    .most-wanted-title h4{
+      padding: $gral-padding;
+      font-size: 30px;
+    }
+    .most-wanted-card-body{
+      display: flex;
+      flex-direction: row;
+    }
+  }
   .indexGameContainer
   {
     
@@ -99,31 +130,25 @@ body {
     .boardGameDescription h3
     {
       color: $color-main-text;
-      /* margin: 20px; */
-      /* padding: 20 px; */
       justify-content: right;
   
     }
   
     .boardGameDescription p
     {
-      /* padding: 20px; */
+
       width: 800px;
       margin: 0px;
     justify-self: right;
     }
-  }
   /* Imágenes del contenedor de los juegos en el index*/
-
-
+    
   .boardgameImage:hover
   {
     transform: scale(1.1);
     
   }
-
-
-
+  }
 
   .gameTitle
   {
@@ -202,7 +227,7 @@ body {
 
   .faq-container
   {
-    height: 500px;
+    height: auto;
     margin: 50px;
   }
   .faqContainer ol{
@@ -267,13 +292,13 @@ body {
 
   /*===================================================================================================*NewReleases*======================================================================================================================================================================================================*/
 
-  .newReleasesContainer
+  .reviewsContainer
   {
     display: flex;
-    height: 500px;
+    height: 250px;
   }
 
-  .newReleasesBoardGameDescription{
+  .reviewsBoardGameDescription{
     float: right;
     padding: 20px;
   }
