@@ -310,4 +310,39 @@ body {
 
 
 
+/*===================================================================================*MediaQueries*====================================================================================*/
 
+@media(max-width:768px){
+
+  body{
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+
+    text-align: left;
+  }
+
+  .indexGameContainer .boardGameDescription p
+  {
+   text-align: left;
+   width: 200px;
+  }
+
+  .indexGameContainer .boardgameImage
+  {
+    width: 20%;
+    height: 20%;
+  }
+
+  .most-wanted .most-wanted-card-body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-explanation
+  {
+    align-items: flex-start;
+  }
+}
